@@ -1,0 +1,25 @@
+root { 
+    display: block;
+}
+body {
+    padding: 0px; margin: 0px; font-size: 12px;
+}
+
+div.mainWrapper{
+    margin-left: 6px;
+    color: black;
+}
+
+div.mainWrapper h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #305040;
+    font-family: Verdana, sans-serif;
+    padding: 3px;
+}
+
+div.banner{
+    background-color: #304082;
+    padding: 8px;
+    color: white;
+}

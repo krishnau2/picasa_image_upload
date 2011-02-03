@@ -1,0 +1,110 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Mar 29, 2010 at 11:31 AM
+-- Server version: 5.1.36
+-- PHP Version: 5.3.0
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `imageupload`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `image_upload_master`
+--
+
+CREATE TABLE IF NOT EXISTS `image_upload_master` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `image_name` varchar(25) NOT NULL,
+  `supplier_name` varchar(30) NOT NULL,
+  `bill_no` varchar(20) NOT NULL,
+  `bill_date` date NOT NULL,
+  `gr_date` date NOT NULL,
+  `defect` varchar(100) NOT NULL,
+  `details` varchar(50) NOT NULL,
+  `colour` varchar(20) NOT NULL,
+  `pack` int(11) NOT NULL,
+  `uom` varchar(5) NOT NULL,
+  `cds` varchar(5) NOT NULL,
+  `no_of_packs` int(11) NOT NULL,
+  `pkd_date` varchar(20) NOT NULL,
+  `batch` varchar(20) NOT NULL,
+  `mrp` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`,`image_name`),
+  UNIQUE KEY `image_name` (`image_name`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=58 ;
+
+--
+-- Dumping data for table `image_upload_master`
+--
+
+INSERT INTO `image_upload_master` (`id`, `image_name`, `supplier_name`, `bill_no`, `bill_date`, `gr_date`, `defect`, `details`, `colour`, `pack`, `uom`, `cds`, `no_of_packs`, `pkd_date`, `batch`, `mrp`) VALUES
+(1, 'DSC04123.JPG', 'ASIAN PAINTS', 'T551135', '2010-02-15', '2010-02-15', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'BLACK', 50, 'ML', 'TIN', 0, '1209', 'N112', '18.00'),
+(2, 'DSC04124.JPG', 'ASIAN PAINTS', 'T559787', '2010-03-06', '2010-03-06', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'G BROWN', 4, 'LT', 'TIN', 0, '0210', 'P1271', '621.00'),
+(3, 'DSC04125.JPG', 'ASIAN PAINTS', 'P551135', '2010-02-15', '2010-02-15', 'No MRP.Pkd date, Batch No.', 'PGE', 'MER RED', 1, 'LT', 'TIN', 0, 'NOT AVAILA', 'NOT AVAILABLE', '0.00'),
+(4, 'DSC04126.JPG', 'ASIAN PAINTS', 'T555813', '2010-02-25', '2010-02-25', 'Leaky,Damaged,Spoiled,Rusted', 'SATIN ENAMEL', 'BASE SE2', 1, 'LT', 'CAN', 0, '1209', 'A106', '202.00'),
+(5, 'DSC04127.JPG', 'ASIAN PAINTS', 'T551637', '2010-02-16', '2010-02-16', 'Leaky,Damaged,Spoiled,Rusted', 'TOUCH WOOD', 'GLOSSY', 1, 'LT', 'TIN', 0, '0210', 'P1586', '171.00'),
+(6, 'DSC04128.JPG', 'ASIAN PAINTS', 'T559787', '2010-03-06', '2010-03-06', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'PHIROZ', 500, 'ML', 'TIN', 0, '0110', 'K561', '89.00'),
+(7, 'DSC04129.JPG', 'ASIAN PAINTS', 'T552900', '2010-02-18', '2010-02-18', 'Leaky,Damaged,Spoiled,Rusted', 'MELAMYNE GOLD', 'CLEAR SEALER', 1, 'LT', 'TPS', 0, '0109', 'B81', '254.00'),
+(8, 'DSC04131.JPG', 'ASIAN PAINTS', 'T554690', '2010-02-23', '2010-02-23', 'Leaky,Damaged,Spoiled,Rusted', 'MELAMYNE GOLD', 'CLEAR GLOSSY', 1, 'LT', 'TPS', 0, '0709', 'B203', '238.00'),
+(9, 'DSC04132.JPG', 'ASIAN PAINTS', 'T558171', '2010-03-03', '2010-03-03', 'Leaky,Damaged,Spoiled,Rusted', 'ROYALE EMULSION', 'BASE RB15', 200, 'ML', 'CAN', 0, '0808', 'A59', '100.00'),
+(10, 'DSC04133.JPG', 'ASIAN PAINTS', 'T556215', '2010-02-26', '2010-02-26', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'LEMON YELLOW', 1, 'LT', 'TIN', 0, '1209', 'P184', '195.00'),
+(11, 'DSC04135.JPG', 'ASIAN PAINTS', 'T559787', '2010-03-06', '2010-03-06', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'BROWN', 500, 'ML', 'TIN', 0, '0110', 'P426', '89.00'),
+(12, 'DSC04136.JPG', 'ASIAN PAINTS', 'T559787', '2010-03-06', '2010-03-06', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'LEAF BROWN', 1, 'LT', 'TIN', 0, '0210', 'K186', '166.00'),
+(13, 'DSC04137.JPG', 'ASIAN PAINTS', 'T548647', '2010-02-08', '2010-02-08', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'GOLDEN YELLOW', 500, 'ML', 'TIN', 0, '1209', 'P622', '98.00'),
+(14, 'DSC04139.JPG', 'ASIAN PAINTS', 'T563222', '2010-03-15', '2010-03-15', 'Leaky,Damaged,Spoiled,Rusted', 'APEX ULTIMA', 'BASE HQ 20', 1, 'LT', 'CAN', 0, '0110', 'A28', '264.00'),
+(15, 'DSC04141.JPG', 'ASIAN PAINTS', 'T559787', '2010-03-06', '2010-03-06', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'IMPERIAL CRIMSON', 200, 'ML', 'TIN', 0, '0210', 'J21', '54.00'),
+(16, 'DSC04144.JPG', 'ASIAN PAINTS', 'T553385', '2010-02-19', '2010-02-19', 'Leaky,Damaged,Spoiled,Rusted', 'PREMIUM EMULSION', 'WHITE', 1, 'LT', 'TIN', 0, '1109', 'S473', '212.00'),
+(17, 'DSC04145.JPG', 'ASIAN PAINTS', 'T549128', '2010-02-09', '2010-02-09', 'Leaky,Damaged,Spoiled,Rusted', 'APEX', 'MING RED', 1, 'LT', 'TIN', 0, '1209', 'A183', '227.00'),
+(18, 'DSC04146.JPG', 'ASIAN PAINTS', 'T559787', '2010-03-06', '2010-03-06', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'SM GREY', 500, 'ML', 'TIN', 0, '1209', 'A575', '89.00'),
+(19, 'DSC04147.JPG', 'ASIAN PAINTS', 'T546611', '2010-02-02', '2010-02-02', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'BASE EB1', 500, 'ML', 'CAN', 0, '0110', 'A654', '94.00'),
+(20, 'DSC04150.JPG', 'ASIAN PAINTS', 'T554690', '2010-02-23', '2010-02-23', 'Leaky,Damaged,Spoiled,Rusted', 'TOUCH WOOD', 'GLOSSY', 500, 'ML', 'TIN', 0, '0110', 'P1576', '89.00'),
+(21, 'DSC04152.JPG', 'ASIAN PAINTS', 'T554690', '2010-02-23', '2010-02-23', 'No MRP.Pkd date, Batch No.', 'TOUCH WOOD', 'GLOSSY', 500, 'ML', 'TIN', 0, 'NOT AVAILA', 'NOT AVAILABLE', '0.00'),
+(22, 'DSC04153.JPG', 'ASIAN PAINTS', 'T549128', '2010-02-09', '2010-02-09', 'Leaky,Damaged,Spoiled,Rusted', '3 MANGOES', 'ALPT', 500, 'ML', 'TIN', 0, '1209', 'W1889', '127.00'),
+(23, 'DSC04154.JPG', 'ASIAN PAINTS', 'T536133', '2010-01-08', '2010-01-08', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'BASE EB6', 1, 'LT', 'CAN', 0, '1209', 'P932', '178.00'),
+(24, 'DSC04157.JPG', 'ASIAN PAINTS', 'T554690', '2010-02-23', '2010-02-23', 'Leaky,Damaged,Spoiled,Rusted', '3 MANGOES', 'ALPT', 1, 'LT', 'TIN', 0, '0110', 'W1979', '233.00'),
+(25, 'DSC04160.JPG', 'ASIAN PAINTS', 'T557863', '2010-03-01', '2010-03-01', 'Leaky,Damaged,Spoiled,Rusted', 'APEX', 'WHITE', 1, 'LT', 'TIN', 0, '1209', 'S710', '210.00'),
+(26, 'DSC04161.JPG', 'ASIAN PAINTS', 'T527022', '2009-12-16', '2009-12-16', 'Leaky,Damaged,Spoiled,Rusted', '3 MANGOES', 'ALPT', 100, 'ML', 'TIN', 0, '1009', 'NOT AVAILABLE', '36.00'),
+(27, 'DSC04164.JPG', 'ASIAN PAINTS', 'T559787', '2010-03-06', '2010-03-06', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'CAS GREEN', 1, 'LT', 'TIN', 0, '1209', 'P153', '266.00'),
+(28, 'DSC04168.JPG', 'ASIAN PAINTS', 'T561205', '2010-03-10', '2010-03-10', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'BLAZE WHITE', 1, 'LT', 'TIN', 0, '0210', 'A1113', '168.00'),
+(29, 'DSC04169.JPG', 'ASIAN PAINTS', 'T559787', '2010-03-06', '2010-03-06', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'BUS GREEN', 200, 'ML', 'TIN', 0, '0210', 'Y36', '50.00'),
+(30, 'DSC04170.JPG', 'ASIAN PAINTS', 'T560637', '2010-03-09', '2010-03-09', 'Leaky,Damaged,Spoiled,Rusted', 'DECOPRIME WALL PRIMER', 'WHITE', 1, 'LT', 'TIN', 0, '0210', 'Y484', '105.00'),
+(31, 'DSC04171.JPG', 'ASIAN PAINTS', 'T560247', '2010-03-08', '2010-03-08', 'Leaky,Damaged,Spoiled,Rusted', 'ACE', 'WHITE', 1, 'LT', 'TIN', 0, '0210', 'S1495', '127.00'),
+(32, 'DSC04175.JPG', 'ASIAN PAINTS', 'T554690', '2010-02-23', '2010-02-23', 'Leaky,Damaged,Spoiled,Rusted', 'TOUCH WOOD', 'GLOSSY', 1, 'LT', 'TIN', 0, '0210', 'P1586', '171.00'),
+(33, 'DSC04177.JPG', 'ASIAN PAINTS', 'T554241', '2010-02-22', '2010-02-22', 'Leaky,Damaged,Spoiled,Rusted & No MRP.Pkd date, Ba', 'PGE', 'RAW SILK', 4, 'LT', 'TIN', 0, 'NOT AVAILA', 'NOT AVAILABLE', '0.00'),
+(34, 'DSC04178.JPG', 'ASIAN PAINTS', 'T559787', '2010-03-06', '2010-03-06', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'BLUE BELL WHITW', 1, 'LT', 'TIN', 0, '1108', 'A148', '237.00'),
+(35, 'DSC04179.JPG', 'ASIAN PAINTS', 'T551135', '2010-02-15', '2010-02-15', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'DP ORANGE', 1, 'LT', 'TIN', 0, '1209', 'N57', '195.00'),
+(36, 'DSC04180.JPG', 'ASIAN PAINTS', 'T544453', '2010-01-28', '2010-01-28', 'Leaky,Damaged,Spoiled,Rusted', 'SYNTHETIC VARNISH', 'CLEAR', 1, 'LT', 'TIN', 0, '1209', 'N318', '159.00'),
+(37, 'DSC04181.JPG', 'ASIAN PAINTS', 'T559787', '2010-03-06', '2010-03-06', 'No MRP.Pkd date, Batch No.', 'PGE', 'PISTA', 500, 'ML', 'TIN', 0, 'NOT AVAILA', 'NOT AVAILABLE', '0.00'),
+(38, 'DSC04187.JPG', 'ASIAN PAINTS', 'T560238', '2010-03-08', '2010-03-08', 'No MRP.Pkd date, Batch No.', 'PGE', 'BASE EB1', 1, 'LT', 'CAN', 0, 'NOT AVAILA', 'NOT AVAILABLE', '0.00'),
+(39, 'DSC04189.JPG', 'ASIAN PAINTS', 'T551136', '2010-02-15', '2010-02-15', 'No MRP.Pkd date, Batch No.', 'PREMIUM EMULSION', 'WHITE', 4, 'LT', 'TIN', 0, 'NOT AVAILA', 'NOT AVAILABLE', '0.00'),
+(40, 'DSC04192.JPG', 'ASIAN PAINTS', 'T548647', '2010-02-08', '2010-02-08', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'RL IVORY', 4, 'LT', 'TIN', 0, '0110', 'K227', '801.00'),
+(41, 'DSC04193.JPG', 'ASIAN PAINTS', 'T540739', '2010-01-19', '2010-01-19', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'DAWN', 4, 'LT', 'TIN', 0, '1109', 'A353', '801.00'),
+(42, 'DSC04194.JPG', 'ASIAN PAINTS', 'T552190', '2010-02-17', '2010-02-17', 'Leaky,Damaged,Spoiled,Rusted', 'TRACTOR EMULSION', 'BASE TE6', 4, 'LT', 'CAN', 0, '1209', 'K166', '408.00'),
+(43, 'DSC04195.JPG', 'ASIAN PAINTS', 'T557863', '2010-03-01', '2010-03-01', 'Leaky,Damaged,Spoiled,Rusted', 'WOOD PRIMER', 'PINK', 4, 'LT', 'TIN', 0, '0210', 'P462', '460.00'),
+(44, 'DSC04197.JPG', 'ASIAN PAINTS', 'T551637', '2010-02-16', '2010-02-16', 'Leaky,Damaged,Spoiled,Rusted', 'WOOD PRIMER', 'WHITE', 4, 'LT', 'TIN', 0, '0110', 'A1150', '490.00'),
+(45, 'DSC04198.JPG', 'ASIAN PAINTS', 'T540739', '2010-01-19', '2010-01-19', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'BAY BROWN', 4, 'LT', 'TIN', 0, '1009', 'P45', '621.00'),
+(46, 'DSC04199.JPG', 'ASIAN PAINTS', 'T531389', '2009-12-28', '2009-12-28', 'Leaky,Damaged,Spoiled,Rusted', 'PREMIUM SATIN ENAMEL', 'WHITE', 4, 'LT', 'TIN', 0, '1109', 'A72', '740.00'),
+(47, 'DSC04214.JPG', 'ASIAN PAINTS', 'T554241', '2010-02-22', '2010-02-22', 'Leaky,Damaged,Spoiled,Rusted & No MRP.Pkd date, Ba', 'PGE', 'PALE ROSE', 4, 'LT', 'TIN', 0, 'NOT AVAILA', 'NOT AVAILABLE', '0.00'),
+(48, 'DSC04196.JPG', 'ASIAN PAINTS', 'T529678', '2009-12-22', '2009-12-22', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'MUSHROOM', 4, 'LT', 'TIN', 0, '0909', 'P125', '801.00'),
+(49, 'DSC04166.JPG', 'ASIAN PAINTS', 'T515000', '2009-11-16', '2009-11-16', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'BLACK', 1, 'LT', 'TIN', 0, '1109', 'P1074', '166.00'),
+(50, 'DSC04172.JPG', 'ASIAN PAINTS', 'T562176', '2010-03-12', '2010-03-12', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'BLACK', 1, 'LT', 'TIN', 0, '0210', 'P1122', '166.00'),
+(51, 'DSC04173.JPG', 'ASIAN PAINTS', 'T562176', '2010-03-12', '2010-03-12', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'BASE EB15', 500, 'ML', 'CAN', 0, '0210', 'A433', '85.00'),
+(52, 'DSC04143.JPG', 'ASIAN PAINTS', 'T548647', '2010-02-08', '2010-02-08', 'No MRP.Pkd date, Batch No.', 'PGE', 'MIDDLE BUFF', 1, 'LT', 'TIN', 0, 'NOT AVAILA', 'NOT AVAILABLE', '0.00'),
+(53, 'DSC04167.JPG', 'ASIAN PAINTS', 'T559787', '2010-03-06', '2010-03-06', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'BLACK', 200, 'ML', 'TIN', 0, '0210', 'N119', '50.00'),
+(54, 'DSC04174.JPG', 'ASIAN PAINTS', 'T548647', '2010-02-08', '2010-02-08', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'GREY', 500, 'ML', 'TIN', 0, '0110', 'P75', '138.00'),
+(55, 'DSC04186.JPG', 'ASIAN PAINTS', 'T556215', '2010-02-26', '2010-02-26', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'BLUE BELL WHITW', 1, 'LT', 'TIN', 0, '1108', 'A148', '237.00'),
+(56, 'DSC04155.JPG', 'ASIAN PAINTS', 'T559787', '2010-03-06', '2010-03-06', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'BLACK', 500, 'ML', 'TPS', 0, '1109', 'A1053', '89.00'),
+(57, 'DSC04149.JPG', 'ASIAN PAINTS', 'T559787', '2010-03-06', '2010-03-06', 'Leaky,Damaged,Spoiled,Rusted', 'PGE', 'DAWN', 500, 'ML', 'TIN', 0, '1209', 'A361', '110.00');
